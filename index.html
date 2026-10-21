@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대한민국 지식재산처 (MOIP) - 다채로운 혁신의 빛</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts & Pretendard CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  
+  <style>
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* 🌈 화려한 무지개 그라데이션 애니메이션 효과 */
+    @keyframes rainbowShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .rainbow-mesh-hero {
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 20%, #4c1d95 40%, #831843 65%, #1e1b4b 100%);
+      position: relative;
+    }
+
+    .rainbow-glow-1 {
+      background: radial-gradient(circle, rgba(239, 68, 68, 0.4) 0%, rgba(249, 115, 22, 0.3) 30%, rgba(234, 179, 8, 0.2) 60%, transparent 80%);
+      filter: blur(80px);
+    }
+    .rainbow-glow-2 {
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.35) 0%, rgba(6, 182, 212, 0.35) 40%, rgba(59, 130, 246, 0.3) 70%, transparent 90%);
+      filter: blur(90px);
+    }
+    .rainbow-glow-3 {
+      background: radial-gradient(circle, rgba(168, 85, 247, 0.4) 0%, rgba(236, 72, 153, 0.35) 50%, transparent 80%);
+      filter: blur(85px);
+    }
+
+    /* 무지개 텍스트 그라데이션 */
+    .rainbow-text {
+      background: linear-gradient(90deg, #ff4d4d, #f97316, #facc15, #10b981, #06b6d4, #6366f1, #d946ef, #ff4d4d);
+      background-size: 300% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbowShift 6s linear infinite;
+    }
+
+    /* 무지개 테두리 효과 */
+    .rainbow-border {
+      position: relative;
+      background: white;
+      border-radius: 1.5rem;
+      z-index: 1;
+    }
+    .rainbow-border::before {
+      content: '';
+      position: absolute;
+      top: -3px; left: -3px; right: -3px; bottom: -3px;
+      background: linear-gradient(90deg, #f43f5e, #fb923c, #facc15, #34d399, #38bdf8, #818cf8, #e879f9, #f43f5e);
+      background-size: 300% 300%;
+      border-radius: 1.6rem;
+      z-index: -1;
+      animation: rainbowShift 6s ease infinite;
+    }
+
+    /* 글래스 네비게이션 */
+    .glass-nav-rainbow {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 2px solid transparent;
+      border-image: linear-gradient(90deg, #f43f5e, #fb923c, #facc15, #10b981, #06b6d4, #6366f1, #d946ef) 1;
+    }
+
+    /* 무지개 버튼 */
+    .rainbow-btn {
+      background: linear-gradient(90deg, #f43f5e, #fb923c, #eab308, #10b981, #06b6d4, #6366f1, #ec4899);
+      background-size: 200% auto;
+      color: white;
+      transition: all 0.4s ease;
+      animation: rainbowShift 5s ease infinite;
+    }
+    .rainbow-btn:hover {
+      box-shadow: 0 10px 25px -5px rgba(236, 72, 153, 0.5), 0 8px 10px -6px rgba(6, 182, 212, 0.5);
+      transform: translateY(-2px);
+    }
+
+    .card-rainbow-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-rainbow-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 30px -10px rgba(99, 102, 241, 0.2), 0 10px 15px -5px rgba(244, 63, 94, 0.15);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-rose-50/40 via-sky-50/30 to-violet-50/40 text-slate-800 antialiased selection:bg-pink-500 selection:text-white">
+
+  <!-- ================= 1. 탑 네비게이션 ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav-rainbow transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- 기관 로고 (무지개 뱃지) -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 rounded-2xl rainbow-btn flex items-center justify-center font-black text-xl shadow-lg group-hover:rotate-6 transition-transform">
+          IP
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-xl font-black tracking-tight text-slate-900">지식재산처</span>
+            <span class="px-2.5 py-0.5 text-[11px] font-extrabold bg-gradient-to-r from-pink-500 via-amber-500 to-indigo-500 text-white rounded-full shadow-sm">
+              ✨ 구. 특허청 승격
+            </span>
+          </div>
+          <span class="text-xs font-bold text-slate-500 tracking-wider">Ministry of Intellectual Property (MOIP)</span>
+        </div>
+      </a>
+
+      <!-- 데스크톱 메뉴 -->
+      <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+        <a href="#support-finder" class="px-4 py-2 text-sm font-black text-white rainbow-btn rounded-xl shadow-md transition-all flex items-center gap-1.5">
+          <i data-lucide="sparkles" class="w-4 h-4 text-amber-200"></i> 내게 맞는 지원 찾기
+        </a>
+        <a href="#about" class="px-3 py-2 text-sm font-bold text-slate-700 hover:text-pink-600 hover:bg-pink-50 rounded-lg transition-colors">기관 소개</a>
+        <a href="#roles" class="px-3 py-2 text-sm font-bold text-slate-700 hover:text-amber-600 hover:bg-amber-50 rounded-lg transition-colors">주요 업무</a>
+        <a href="#guide" class="px-3 py-2 text-sm font-bold text-slate-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors">4대 권리 안내</a>
+        <a href="#trends" class="px-3 py-2 text-sm font-bold text-slate-700 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition-colors">지식재산 동향</a>
+        <a href="#news" class="px-3 py-2 text-sm font-bold text-slate-700 hover:text-violet-600 hover:bg-violet-50 rounded-lg transition-colors">최신 뉴스</a>
+        <a href="#simulator" class="px-3 py-2 text-sm font-bold text-slate-700 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors">권리 진단</a>
+        <a href="https://www.kipris.or.kr" target="_blank" rel="noopener noreferrer" class="ml-2 px-3.5 py-2 text-sm font-black text-white bg-slate-900 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 rounded-xl shadow transition-all flex items-center gap-1.5">
+          <i data-lucide="search" class="w-4 h-4 text-yellow-300"></i>
+          특허 검색(KIPRIS)
+        </a>
+      </nav>
+
+      <!-- 모바일 햄버거 버튼 -->
+      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-700 hover:bg-pink-100 focus:outline-none">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- 모바일 메뉴 드롭다운 -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-b border-pink-200 px-4 pt-2 pb-5 space-y-1">
+      <a href="#support-finder" class="block px-3 py-2 rounded-lg text-base font-black text-white rainbow-btn">🌈 내게 맞는 맞춤 지원 찾기 (체크리스트)</a>
+      <a href="#about" class="block px-3 py-2 rounded-md text-base font-bold text-slate-700 hover:bg-pink-50">기관 소개</a>
+      <a href="#roles" class="block px-3 py-2 rounded-md text-base font-bold text-slate-700 hover:bg-amber-50">주요 업무</a>
+      <a href="#guide" class="block px-3 py-2 rounded-md text-base font-bold text-slate-700 hover:bg-emerald-50">4대 권리 안내</a>
+      <a href="#trends" class="block px-3 py-2 rounded-md text-base font-bold text-slate-700 hover:bg-indigo-50">지식재산 동향</a>
+      <a href="#news" class="block px-3 py-2 rounded-md text-base font-bold text-slate-700 hover:bg-purple-50">최신 뉴스</a>
+      <a href="#simulator" class="block px-3 py-2 rounded-md text-base font-bold text-slate-700 hover:bg-rose-50">권리 찾기 진단</a>
+      <div class="pt-2">
+        <a href="https://www.kipris.or.kr" target="_blank" class="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-center font-bold text-white bg-slate-900 rounded-xl">
+          <i data-lucide="search" class="w-4 h-4 text-yellow-300"></i> KIPRIS 무료 특허검색
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 2. 화려한 무지개 히어로 섹션 ================= -->
+  <section class="relative pt-32 pb-24 md:pt-40 md:pb-32 rainbow-mesh-hero text-white overflow-hidden">
+    <!-- 다채로운 오로라 무지개 블러 구체 -->
+    <div class="absolute -top-32 -left-32 w-[500px] h-[500px] rainbow-glow-1 rounded-full pointer-events-none"></div>
+    <div class="absolute top-1/4 right-0 w-[550px] h-[550px] rainbow-glow-2 rounded-full pointer-events-none"></div>
+    <div class="absolute -bottom-32 left-1/3 w-[600px] h-[600px] rainbow-glow-3 rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- 텍스트 영역 -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs sm:text-sm font-black shadow-lg">
+            <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-pink-400 via-yellow-400 to-cyan-400 animate-ping"></span>
+            대한민국 정부조직 개편 완료 (2025.10.01 공식 출범)
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight md:leading-[1.15]">
+            국민의 빛나는 아이디어,<br>
+            <span class="rainbow-text">대한민국의 국가 전략 자산</span>이 됩니다!
+          </h1>
+
+          <p class="text-slate-200 text-base sm:text-lg md:text-xl font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            특허청이 국무총리 소속의 <strong class="text-yellow-300 font-bold underline decoration-wavy decoration-pink-500">‘지식재산처’</strong>로 새롭게 출범했습니다. 
+            AI·반도체 기술 패권 경쟁 시대, 범정부 지식재산 사령탑으로서 
+            국민과 기업의 혁신을 무지개처럼 다채롭고 든든하게 지켜드립니다.
+          </p>
+
+          <!-- 바로가기 액션 버튼군 -->
+          <div class="pt-3 flex flex-wrap gap-4 justify-center lg:justify-start">
+            <a href="#support-finder" class="px-7 py-4 rounded-2xl rainbow-btn font-black text-base shadow-2xl flex items-center gap-2.5">
+              <i data-lucide="check-square" class="w-5 h-5 text-yellow-200"></i>
+              "나는 어떤 도움을 받을 수 있을까?" 확인하기
+            </a>
+            <a href="#guide" class="px-6 py-4 rounded-2xl bg-white/15 hover:bg-white/25 border border-white/30 text-white font-bold text-base backdrop-blur transition-all flex items-center gap-2">
+              <i data-lucide="book-open" class="w-5 h-5 text-cyan-300"></i>
+              4대 권리 안내
+            </a>
+          </div>
+
+          <!-- 주요 통계 뱃지 바 (다양한 네온 칼라) -->
+          <div class="pt-8 border-t border-white/15 grid grid-cols-3 gap-3 sm:gap-4 text-center">
+            <div class="p-3.5 rounded-2xl bg-gradient-to-br from-rose-500/20 to-orange-500/20 border border-rose-400/30 backdrop-blur">
+              <div class="text-2xl sm:text-3xl font-black text-rose-300">세계 4위</div>
+              <div class="text-xs sm:text-sm text-slate-200 mt-1 font-medium">글로벌 특허출원</div>
+            </div>
+            <div class="p-3.5 rounded-2xl bg-gradient-to-br from-amber-500/20 to-emerald-500/20 border border-amber-400/30 backdrop-blur">
+              <div class="text-2xl sm:text-3xl font-black text-amber-300">세계 1위</div>
+              <div class="text-xs sm:text-sm text-slate-200 mt-1 font-medium">GDP 대비 특허출원</div>
+            </div>
+            <div class="p-3.5 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-indigo-500/20 border border-cyan-400/30 backdrop-blur">
+              <div class="text-2xl sm:text-3xl font-black text-cyan-300">12조원+</div>
+              <div class="text-xs sm:text-sm text-slate-200 mt-1 font-medium">IP 금융 생태계</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 우측 시각화 카드 (무지개 테두리 글래스) -->
+        <div class="lg:col-span-5">
+          <div class="relative p-1 rounded-3xl bg-gradient-to-tr from-pink-500 via-amber-400 via-emerald-400 to-indigo-500 shadow-2xl">
+            <div class="bg-slate-900/90 backdrop-blur-xl rounded-[22px] p-6 sm:p-8 space-y-6">
+              
+              <div class="flex items-center justify-between pb-4 border-b border-white/15">
+                <span class="text-sm font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-amber-300 uppercase tracking-widest flex items-center gap-2">
+                  <i data-lucide="sparkles" class="w-4 h-4 text-amber-300"></i> 지식재산처의 약속
+                </span>
+                <span class="text-xs bg-gradient-to-r from-pink-500 to-violet-500 text-white px-3 py-1 rounded-full font-black shadow">차관급 독립부처</span>
+              </div>
+
+              <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                  <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-rose-500 to-orange-400 flex items-center justify-center shrink-0 shadow-md">
+                    <i data-lucide="scale" class="w-5 h-5 text-white"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-base text-white">범정부 지식재산 컨트롤타워</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-0.5">각 부처에 흩어져 있던 특허·기술·데이터 정책을 국가 차원에서 총괄·조정합니다.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-500 to-emerald-400 flex items-center justify-center shrink-0 shadow-md">
+                    <i data-lucide="zap" class="w-5 h-5 text-white"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-base text-white">국가전략기술 초고속 심사</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-0.5">반도체·AI·이차전지·바이오 등 핵심 미래 전략기술의 출원 심사를 신속 지원합니다.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center shrink-0 shadow-md">
+                    <i data-lucide="shield" class="w-5 h-5 text-white"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-base text-white">기술유출 원천차단 & 특사경 강화</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-0.5">기술경찰 수사력 확대 및 '지식재산분쟁대응국' 신설로 국가 핵심 기술 탈취에 엄정 대응합니다.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-white/15">
+                <div class="bg-white/10 rounded-xl p-3.5 border border-white/10 text-xs text-slate-200 flex items-center justify-between">
+                  <span>💡 공식 누리집 주소</span>
+                  <span class="font-mono font-black text-amber-300">www.moip.go.kr</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= 3. 대국민 맞춤형 지원사업 체크리스트 & 설문 (무지개 톤 개편) ================= -->
+  <section id="support-finder" class="py-20 relative">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- 섹션 헤더 -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-500/10 via-amber-500/10 to-indigo-500/10 border border-pink-300 text-pink-700 text-xs font-black uppercase tracking-wider mb-3">
+          <i data-lucide="sparkles" class="w-4 h-4 text-amber-500"></i> 국민 맞춤 혜택 가이드
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
+          "나는 지식재산처로부터<br class="sm:hidden"> 어떤 도움을 받을 수 있을까?"
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg mt-3">
+          신분과 고민을 체크해 보세요. 지식재산처가 제공하는 <strong>수수료 전액 감면, 무료 변리 상담, 시제품 제작비 지원</strong> 등 무지개빛 혜택을 찾아드립니다!
+        </p>
+      </div>
+
+      <!-- 설문 컨테이너 박스 (무지개 테두리) -->
+      <div class="rainbow-border shadow-2xl p-6 sm:p-10 mb-12">
+        
+        <!-- STEP 1: 유형 선택 (다채로운 파스텔 무지개 칩) -->
+        <div class="mb-10">
+          <div class="flex items-center gap-2.5 mb-4">
+            <span class="w-8 h-8 rounded-xl bg-gradient-to-tr from-pink-500 to-rose-500 text-white font-black text-sm flex items-center justify-center shadow">1</span>
+            <h3 class="text-lg sm:text-xl font-black text-slate-900">당신의 현재 신분이나 사업 형태는 무엇인가요?</h3>
+            <span class="text-xs text-pink-600 font-bold">(하나 선택)</span>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3" id="personaButtonGroup">
+            <!-- 1. 일반 국민/직장인 (Rose) -->
+            <button type="button" onclick="selectPersona('citizen', this)" class="persona-btn p-4 rounded-2xl border-2 border-slate-200 hover:border-rose-400 bg-white text-center transition-all flex flex-col items-center justify-center gap-2 group">
+              <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="user" class="w-6 h-6"></i>
+              </div>
+              <span class="text-sm font-bold text-slate-800">일반 국민<br><span class="text-xs font-normal text-slate-500">개인/직장인</span></span>
+            </button>
+
+            <!-- 2. 소상공인/자영업자 (Orange/Amber) -->
+            <button type="button" onclick="selectPersona('merchant', this)" class="persona-btn p-4 rounded-2xl border-2 border-slate-200 hover:border-amber-400 bg-white text-center transition-all flex flex-col items-center justify-center gap-2 group">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="store" class="w-6 h-6"></i>
+              </div>
+              <span class="text-sm font-bold text-slate-800">소상공인<br><span class="text-xs font-normal text-slate-500">자영업/골목상권</span></span>
+            </button>
+
+            <!-- 3. 예비창업자/청년 (Yellow/Lime) -->
+            <button type="button" onclick="selectPersona('startup', this)" class="persona-btn p-4 rounded-2xl border-2 border-slate-200 hover:border-lime-500 bg-white text-center transition-all flex flex-col items-center justify-center gap-2 group">
+              <div class="w-12 h-12 rounded-xl bg-lime-100 text-lime-700 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="rocket" class="w-6 h-6"></i>
+              </div>
+              <span class="text-sm font-bold text-slate-800">예비창업자<br><span class="text-xs font-normal text-slate-500">청년/초기창업</span></span>
+            </button>
+
+            <!-- 4. 중소기업/벤처 (Emerald/Teal) -->
+            <button type="button" onclick="selectPersona('sme', this)" class="persona-btn p-4 rounded-2xl border-2 border-slate-200 hover:border-emerald-400 bg-white text-center transition-all flex flex-col items-center justify-center gap-2 group">
+              <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="building-2" class="w-6 h-6"></i>
+              </div>
+              <span class="text-sm font-bold text-slate-800">중소기업<br><span class="text-xs font-normal text-slate-500">벤처/스타트업</span></span>
+            </button>
+
+            <!-- 5. 학생/청소년 (Cyan/Sky) -->
+            <button type="button" onclick="selectPersona('student', this)" class="persona-btn p-4 rounded-2xl border-2 border-slate-200 hover:border-cyan-400 bg-white text-center transition-all flex flex-col items-center justify-center gap-2 group">
+              <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+              </div>
+              <span class="text-sm font-bold text-slate-800">학생/청소년<br><span class="text-xs font-normal text-slate-500">초중고/대학생</span></span>
+            </button>
+
+            <!-- 6. 연구원/연구기관 (Indigo/Purple) -->
+            <button type="button" onclick="selectPersona('researcher', this)" class="persona-btn p-4 rounded-2xl border-2 border-slate-200 hover:border-purple-400 bg-white text-center transition-all flex flex-col items-center justify-center gap-2 group">
+              <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="microscope" class="w-6 h-6"></i>
+              </div>
+              <span class="text-sm font-bold text-slate-800">연구원<br><span class="text-xs font-normal text-slate-500">대학/출연연</span></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 2: 필요한 도움/고민 체크리스트 -->
+        <div class="mb-10">
+          <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+            <div class="flex items-center gap-2.5">
+              <span class="w-8 h-8 rounded-xl bg-gradient-to-tr from-amber-500 to-yellow-400 text-white font-black text-sm flex items-center justify-center shadow">2</span>
+              <h3 class="text-lg sm:text-xl font-black text-slate-900">어떤 도움이 가장 절실한가요?</h3>
+              <span class="text-xs text-amber-700 font-bold">(해당하는 항목 모두 체크)</span>
+            </div>
+            <button type="button" onclick="toggleAllNeeds(true)" class="text-xs text-purple-600 hover:text-purple-800 font-bold underline">모두 선택</button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5" id="needsCheckboxGroup">
+            
+            <label class="p-4 rounded-2xl border-2 border-pink-100 hover:border-pink-300 bg-pink-50/40 cursor-pointer flex items-start gap-3 transition-colors select-none">
+              <input type="checkbox" name="need" value="idea_patent" class="mt-1 w-5 h-5 text-pink-600 rounded border-pink-300 focus:ring-pink-500" onchange="runSupportFilter()">
+              <div>
+                <span class="font-black text-sm text-slate-900 block">💡 아이디어 구체화 & 출원 지원</span>
+                <span class="text-xs text-slate-600">생각만 있는 아이디어를 특허나 디자인 서류로 만들기</span>
+              </div>
+            </label>
+
+            <label class="p-4 rounded-2xl border-2 border-amber-100 hover:border-amber-300 bg-amber-50/40 cursor-pointer flex items-start gap-3 transition-colors select-none">
+              <input type="checkbox" name="need" value="fee_cut" class="mt-1 w-5 h-5 text-amber-600 rounded border-amber-300 focus:ring-amber-500" onchange="runSupportFilter()">
+              <div>
+                <span class="font-black text-sm text-slate-900 block">💰 출원료·등록료 비용 감면/면제</span>
+                <span class="text-xs text-slate-600">특허청 수수료 70~100% 감면 혜택 확인</span>
+              </div>
+            </label>
+
+            <label class="p-4 rounded-2xl border-2 border-emerald-100 hover:border-emerald-300 bg-emerald-50/40 cursor-pointer flex items-start gap-3 transition-colors select-none">
+              <input type="checkbox" name="need" value="free_counsel" class="mt-1 w-5 h-5 text-emerald-600 rounded border-emerald-300 focus:ring-emerald-500" onchange="runSupportFilter()">
+              <div>
+                <span class="font-black text-sm text-slate-900 block">⚖️ 무료 변리사 상담 & 대리</span>
+                <span class="text-xs text-slate-600">비용 부담 없는 공익변리사의 서류 작성 및 법률 자문</span>
+              </div>
+            </label>
+
+            <label class="p-4 rounded-2xl border-2 border-cyan-100 hover:border-cyan-300 bg-cyan-50/40 cursor-pointer flex items-start gap-3 transition-colors select-none">
+              <input type="checkbox" name="need" value="brand_dispute" class="mt-1 w-5 h-5 text-cyan-600 rounded border-cyan-300 focus:ring-cyan-500" onchange="runSupportFilter()">
+              <div>
+                <span class="font-black text-sm text-slate-900 block">🏷️ 상호·상표 도용 & 분쟁 대응</span>
+                <span class="text-xs text-slate-600">내 가게 이름 빼앗김 방지, 짝퉁 유통 및 경고장 대응</span>
+              </div>
+            </label>
+
+            <label class="p-4 rounded-2xl border-2 border-indigo-100 hover:border-indigo-300 bg-indigo-50/40 cursor-pointer flex items-start gap-3 transition-colors select-none">
+              <input type="checkbox" name="need" value="finance_eval" class="mt-1 w-5 h-5 text-indigo-600 rounded border-indigo-300 focus:ring-indigo-500" onchange="runSupportFilter()">
+              <div>
+                <span class="font-black text-sm text-slate-900 block">🏦 특허 담보 대출 & 기술가치평가</span>
+                <span class="text-xs text-slate-600">특허권을 담보로 사업 자금 대출 및 투자 유치</span>
+              </div>
+            </label>
+
+            <label class="p-4 rounded-2xl border-2 border-purple-100 hover:border-purple-300 bg-purple-50/40 cursor-pointer flex items-start gap-3 transition-colors select-none">
+              <input type="checkbox" name="need" value="rnd_fast" class="mt-1 w-5 h-5 text-purple-600 rounded border-purple-300 focus:ring-purple-500" onchange="runSupportFilter()">
+              <div>
+                <span class="font-black text-sm text-slate-900 block">⚡ 초고속 우선심사 & 빅데이터 분석</span>
+                <span class="text-xs text-slate-600">심사 기간을 수개월로 단축, 특허 빅데이터 사전 분석</span>
+              </div>
+            </label>
+
+          </div>
+        </div>
+
+        <!-- 하단 액션 버튼 -->
+        <div class="flex flex-col sm:flex-row items-center justify-between pt-6 border-t border-slate-100 gap-4">
+          <div class="text-xs sm:text-sm text-slate-600 font-medium flex items-center gap-1.5">
+            <i data-lucide="sparkles" class="w-4 h-4 text-pink-500 shrink-0"></i>
+            조건을 변경하면 아래 무지개 카드 리스트가 실시간으로 자동 반영됩니다.
+          </div>
+          <div class="flex gap-2 w-full sm:w-auto">
+            <button type="button" onclick="resetSupportFinder()" class="w-1/2 sm:w-auto px-5 py-2.5 rounded-xl border-2 border-slate-200 hover:bg-slate-100 text-slate-700 text-sm font-bold transition-colors">
+              초기화
+            </button>
+            <button type="button" onclick="scrollToResults()" class="w-1/2 sm:w-auto px-6 py-2.5 rounded-xl rainbow-btn text-white text-sm font-black shadow-lg flex items-center justify-center gap-1.5">
+              <span>결과 확인하기</span>
+              <i data-lucide="arrow-down" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ================= 결과 리스트 섹션 ================= -->
+      <div id="supportResultContainer" class="space-y-6">
+        <div class="flex items-center justify-between pb-3 border-b-2 border-pink-200">
+          <div>
+            <h3 class="text-xl sm:text-2xl font-black text-slate-900 flex items-center gap-2">
+              <span>🎯 맞춤 혜택 검색 결과</span>
+              <span id="resultCountBadge" class="text-sm font-black bg-gradient-to-r from-pink-500 to-indigo-500 text-white px-3.5 py-0.5 rounded-full shadow-sm">6개 혜택 발견</span>
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 font-medium mt-1" id="resultTargetSummary">
+              전체 국민을 위한 지식재산처의 대표 지원 제도를 모아 보여드립니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- 추천 카드 그리드 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="supportCardsGrid">
+          <!-- 자바스크립트로 동적 렌더링 -->
+        </div>
+
+        <!-- 무지개 하단 상담 배너 -->
+        <div class="mt-12 p-8 rounded-3xl bg-gradient-to-r from-violet-900 via-purple-900 to-rose-900 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl relative overflow-hidden">
+          <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-pink-500/30 rounded-full filter blur-3xl pointer-events-none"></div>
+          <div class="space-y-1.5 text-center md:text-left relative z-10">
+            <div class="text-xs text-amber-300 font-black uppercase tracking-wider flex items-center justify-center md:justify-start gap-1">
+              <i data-lucide="phone-call" class="w-4 h-4"></i> 1:1 국민 맞춤 헬프데스크
+            </div>
+            <h4 class="text-xl font-black">어디서부터 시작해야 할지 여전히 막막하신가요?</h4>
+            <p class="text-xs sm:text-sm text-slate-200">
+              특허고객상담센터(1544-8080) 또는 공익변리사 특허상담센터에서 1:1로 친절하게 안내해 드립니다.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2.5 shrink-0 relative z-10">
+            <a href="tel:1544-8080" class="px-5 py-3 rounded-xl bg-gradient-to-r from-amber-400 to-yellow-300 text-slate-950 font-black text-sm shadow-lg hover:scale-105 transition-transform flex items-center gap-1.5">
+              <i data-lucide="phone" class="w-4 h-4"></i> 1544-8080 바로 전화
+            </a>
+            <a href="https://www.ripc.org" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-xl bg-white/20 hover:bg-white/30 text-white font-bold text-sm backdrop-blur transition-all flex items-center gap-1.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-cyan-300"></i> 전국 지식재산센터 찾기
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= 4. 지식재산처란? (기관 승격 배경 및 비전) ================= -->
+  <section id="about" class="py-20 bg-white/70 border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-pink-600 font-black text-sm tracking-widest uppercase">About MOIP</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2 mb-4">
+          특허청에서 지식재산처로,<br class="hidden sm:inline"> 왜 새롭게 도약했을까요?
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          과거의 지식재산 행정이 단순히 출원된 특허를 '심사하고 등록'하는 집행 중심이었다면, 
+          지금의 지식재산은 국가 안보이자 경제 패권을 가르는 핵심 전략 자산이기 때문입니다.
+        </p>
+      </div>
+
+      <!-- 비교 카드 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <!-- 기존 특허청 -->
+        <div class="p-8 rounded-3xl bg-slate-100 border border-slate-200 space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-slate-300 text-slate-800">과거 행정 체계</span>
+            <span class="text-sm font-semibold text-slate-500">1977 ~ 2025</span>
+          </div>
+          <h3 class="text-2xl font-black text-slate-800">산업통상자원부 외청 특허청</h3>
+          <ul class="space-y-3 text-slate-600 text-sm">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="minus-circle" class="w-5 h-5 text-slate-400 shrink-0 mt-0.5"></i>
+              <span><strong>심사·집행 중심:</strong> 특허, 실용신안, 상표, 디자인의 출원 심사 및 등록 위주</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="minus-circle" class="w-5 h-5 text-slate-400 shrink-0 mt-0.5"></i>
+              <span><strong>부처 간 한계:</strong> 범부처 R&D 연계 및 기술유출 처벌·제도 개선 주도에 제한</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="minus-circle" class="w-5 h-5 text-slate-400 shrink-0 mt-0.5"></i>
+              <span><strong>분쟁 대응 한계:</strong> 글로벌 특허 분쟁에 대해 과(科) 단위의 사후적 지원에 머무름</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 승격된 지식재산처 (무지개 그라데이션 카드) -->
+        <div class="p-8 rounded-3xl bg-gradient-to-br from-pink-50 via-purple-50 to-cyan-50 border-2 border-pink-400 shadow-xl space-y-4 relative overflow-hidden">
+          <div class="flex items-center justify-between">
+            <span class="px-3 py-1 rounded-full text-xs font-black rainbow-btn shadow">현재 혁신 체계</span>
+            <span class="text-sm font-black text-purple-700">2025. 10. 01 출범</span>
+          </div>
+          <h3 class="text-2xl font-black text-slate-900">국무총리 소속 지식재산처</h3>
+          <ul class="space-y-3 text-slate-800 text-sm font-medium">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-pink-600 shrink-0 mt-0.5"></i>
+              <span><strong>범정부 컨트롤타워:</strong> R&D 기획부터 특허 출원, 거래·사업화, 가치평가까지 총괄</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-purple-600 shrink-0 mt-0.5"></i>
+              <span><strong>지식재산분쟁대응국 신설:</strong> 미·중 패권경쟁 및 기술탈취에 즉각 대응하는 국(局) 단위 사령탑</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-cyan-600 shrink-0 mt-0.5"></i>
+              <span><strong>기술경찰·지식재산거래 활성화:</strong> 특별사법경찰 확대 및 12조원 규모 지식재산 금융 연계</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3대 핵심 미션 (컬러풀 카드 3종) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gradient-to-b from-rose-50 to-white p-7 rounded-3xl border border-rose-200 card-rainbow-hover">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-rose-500 to-pink-500 text-white flex items-center justify-center font-bold mb-4 shadow-md">
+            <i data-lucide="lightbulb" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-lg font-black text-slate-900 mb-2">창의적 아이디어 권리화</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            학생, 소상공인, 중소기업까지 누구나 자신의 독창적인 아이디어와 브랜드를 손쉽게 권리화할 수 있도록 문턱을 대폭 낮춥니다.
+          </p>
+        </div>
+
+        <div class="bg-gradient-to-b from-amber-50 to-white p-7 rounded-3xl border border-amber-200 card-rainbow-hover">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-500 to-yellow-500 text-white flex items-center justify-center font-bold mb-4 shadow-md">
+            <i data-lucide="trending-up" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-lg font-black text-slate-900 mb-2">지식재산 사업화·금융 지원</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            특허를 장롱 속에 넣어두지 않고, 기술가치평가를 거쳐 대출·투자를 유치하고 사업화 수익을 창출하는 금융 생태계를 구축합니다.
+          </p>
+        </div>
+
+        <div class="bg-gradient-to-b from-cyan-50 to-white p-7 rounded-3xl border border-cyan-200 card-rainbow-hover">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-cyan-500 to-blue-500 text-white flex items-center justify-center font-bold mb-4 shadow-md">
+            <i data-lucide="shield-alert" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-lg font-black text-slate-900 mb-2">해외 진출 & K-브랜드 보호</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            전 세계에 퍼진 한국 화장품, 식품, 콘텐츠의 위조품(짝퉁)을 강력 차단하고 국가핵심기술 유출을 철저히 막아냅니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= 5. 국민이 쉽게 이해하는 지식재산권 4형제 ================= -->
+  <section id="guide" class="py-20 bg-gradient-to-b from-white via-indigo-50/20 to-pink-50/30 border-b border-purple-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-purple-600 font-black text-sm tracking-widest uppercase">Rainbow Guide</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2 mb-4">
+          알기 쉬운 지식재산권 4형제
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          특허, 실용신안, 디자인, 상표! 스마트폰 하나를 예로 들면 무지개처럼 명확하게 이해할 수 있습니다.
+        </p>
+      </div>
+
+      <!-- 스마트폰 비유 카드 4선 (무지개 4색 매칭) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <!-- 특허권 (Blue/Indigo) -->
+        <div class="bg-white rounded-3xl p-6 border-2 border-blue-200 shadow-md card-rainbow-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-500 text-white flex items-center justify-center mb-4 shadow">
+              <i data-lucide="cpu" class="w-6 h-6"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-xl font-black text-slate-900">특허권</h3>
+              <span class="text-xs font-bold px-2 py-0.5 bg-blue-100 text-blue-800 rounded-full">존속 20년</span>
+            </div>
+            <p class="text-xs text-blue-600 font-bold mb-3">기술적 원리와 혁신적인 발명</p>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              고도의 기술적 창작을 보호합니다. 스마트폰의 초고속 통신 알고리즘이나 접히는 폴더블 힌지 메커니즘이 특허에 해당합니다.
+            </p>
+          </div>
+          <div class="bg-blue-50 p-3.5 rounded-2xl text-xs text-slate-800 border border-blue-100">
+            <span class="font-black text-blue-700 block mb-0.5">📱 스마트폰 예시</span>
+            "화면 밑 지문인식 센서의 작동 알고리즘"
+          </div>
+        </div>
+
+        <!-- 실용신안권 (Emerald/Green) -->
+        <div class="bg-white rounded-3xl p-6 border-2 border-emerald-200 shadow-md card-rainbow-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-emerald-500 to-teal-400 text-white flex items-center justify-center mb-4 shadow">
+              <i data-lucide="wrench" class="w-6 h-6"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-xl font-black text-slate-900">실용신안권</h3>
+              <span class="text-xs font-bold px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded-full">존속 10년</span>
+            </div>
+            <p class="text-xs text-emerald-600 font-bold mb-3">일상 속 유용한 구조적 개선 (작은 발명)</p>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              물품의 형상이나 구조를 실용적으로 개선한 기술입니다. 거치대 일체형 스마트폰 케이스나 원터치 카드 수납 방식 등이 대표적입니다.
+            </p>
+          </div>
+          <div class="bg-emerald-50 p-3.5 rounded-2xl text-xs text-slate-800 border border-emerald-100">
+            <span class="font-black text-emerald-700 block mb-0.5">📱 스마트폰 예시</span>
+            "손가락을 걸 수 있는 링 일체형 후면 케이스 구조"
+          </div>
+        </div>
+
+        <!-- 디자인권 (Purple/Pink) -->
+        <div class="bg-white rounded-3xl p-6 border-2 border-pink-200 shadow-md card-rainbow-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-purple-500 to-pink-500 text-white flex items-center justify-center mb-4 shadow">
+              <i data-lucide="palette" class="w-6 h-6"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-xl font-black text-slate-900">디자인권</h3>
+              <span class="text-xs font-bold px-2 py-0.5 bg-pink-100 text-pink-800 rounded-full">존속 20년</span>
+            </div>
+            <p class="text-xs text-pink-600 font-bold mb-3">물품의 형태와 색채의 시각적 미감</p>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              눈으로 보는 외관의 아름다움을 보호합니다. 곡면 엣지 디스플레이의 곡률, 카메라 섬(인덕션)의 독특한 배열, 둥근 모서리 비율 등입니다.
+            </p>
+          </div>
+          <div class="bg-pink-50 p-3.5 rounded-2xl text-xs text-slate-800 border border-pink-100">
+            <span class="font-black text-pink-700 block mb-0.5">📱 스마트폰 예시</span>
+            "스마트폰 테두리의 유려한 물방울 카메라 디자인"
+          </div>
+        </div>
+
+        <!-- 상표권 (Amber/Orange) -->
+        <div class="bg-white rounded-3xl p-6 border-2 border-amber-200 shadow-md card-rainbow-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-500 to-orange-500 text-white flex items-center justify-center mb-4 shadow">
+              <i data-lucide="badge-check" class="w-6 h-6"></i>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-xl font-black text-slate-900">상표권</h3>
+              <span class="text-xs font-bold px-2 py-0.5 bg-amber-100 text-amber-800 rounded-full">10년(갱신)</span>
+            </div>
+            <p class="text-xs text-amber-600 font-bold mb-3">상품·서비스의 출처를 나타내는 브랜드</p>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              자기 상품과 타인 상품을 식별하게 하는 기호·문자·로고입니다. 갤럭시(Galaxy), 아이폰(iPhone) 같은 이름과 브랜드 심볼입니다.
+            </p>
+          </div>
+          <div class="bg-amber-50 p-3.5 rounded-2xl text-xs text-slate-800 border border-amber-100">
+            <span class="font-black text-amber-700 block mb-0.5">📱 스마트폰 예시</span>
+            "제품 뒷면에 각인된 사과 모양 로고 또는 'GALAXY'"
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= 6. 지식재산처의 6대 핵심 업무 ================= -->
+  <section id="roles" class="py-20 bg-white border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-rose-600 font-black text-sm tracking-widest uppercase">Key Responsibilities</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2 mb-4">
+          지식재산처는 어떤 일을 하나요?
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          연구개발의 첫걸음부터 해외 진출 보호까지, 기술과 브랜드의 전 주기를 아우르는 지식재산처의 6대 핵심 영역입니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 업무 1 (Rose) -->
+        <div class="p-7 rounded-3xl border-2 border-rose-100 bg-white shadow-sm hover:border-rose-400 card-rainbow-hover space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-rose-500 text-white flex items-center justify-center shadow">
+            <i data-lucide="file-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-black text-slate-900">1. 고품질 초고속 심사·심판</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            AI, 반도체 등 핵심 전략기술의 패스트트랙 심사를 제공하고, 특허심판원을 통해 특허 분쟁에 대해 법원 1심 성격의 공정하고 신속한 심결을 내립니다.
+          </p>
+        </div>
+
+        <!-- 업무 2 (Orange) -->
+        <div class="p-7 rounded-3xl border-2 border-orange-100 bg-white shadow-sm hover:border-orange-400 card-rainbow-hover space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-orange-500 text-white flex items-center justify-center shadow">
+            <i data-lucide="network" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-black text-slate-900">2. 범부처 국가 R&D 특허 연계 (IP-R&D)</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            연간 30조 원 규모의 국가 R&D 사업이 이미 있는 기술을 중복 개발하지 않도록, 전 세계 5억 건의 특허 빅데이터를 사전 분석하여 핵심 특허를 선점합니다.
+          </p>
+        </div>
+
+        <!-- 업무 3 (Emerald) -->
+        <div class="p-7 rounded-3xl border-2 border-emerald-100 bg-white shadow-sm hover:border-emerald-400 card-rainbow-hover space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-500 text-white flex items-center justify-center shadow">
+            <i data-lucide="coins" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-black text-slate-900">3. 지식재산 거래 및 금융 생태계</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            우수 특허를 보유한 스타트업·중소기업이 부동산 담보 없이도 '특허 가치평가'를 통해 자금을 대출·투자받을 수 있도록 12조 원 규모의 IP 금융을 지원합니다.
+          </p>
+        </div>
+
+        <!-- 업무 4 (Cyan) -->
+        <div class="p-7 rounded-3xl border-2 border-cyan-100 bg-white shadow-sm hover:border-cyan-400 card-rainbow-hover space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-cyan-500 text-white flex items-center justify-center shadow">
+            <i data-lucide="siren" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-black text-slate-900">4. 기술유출 수사 (기술경찰)</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            반도체, 이차전지, 바이오 등 국가핵심기술의 해외 불법 유출과 기업의 영업비밀 침해를 전문 수사관(특사경)이 밀착 추적하여 엄단합니다.
+          </p>
+        </div>
+
+        <!-- 업무 5 (Indigo) -->
+        <div class="p-7 rounded-3xl border-2 border-indigo-100 bg-white shadow-sm hover:border-indigo-400 card-rainbow-hover space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-indigo-500 text-white flex items-center justify-center shadow">
+            <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-black text-slate-900">5. 위조상품 방지 & K-브랜드 보호</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            온라인 오픈마켓 및 SNS 상의 짝퉁 유통을 24시간 인공지능으로 모니터링하고, 동남아·중국 등 해외 K-브랜드 무단 선점 및 위조품을 강력 제재합니다.
+          </p>
+        </div>
+
+        <!-- 업무 6 (Violet) -->
+        <div class="p-7 rounded-3xl border-2 border-purple-100 bg-white shadow-sm hover:border-purple-400 card-rainbow-hover space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-purple-500 text-white flex items-center justify-center shadow">
+            <i data-lucide="globe" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-black text-slate-900">6. 글로벌 협력 & 국제표준특허 주도</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            WIPO(세계지식재산기구) 및 선진 5개국 특허청(IP5: 한·미·일·중·유럽)과의 긴밀한 협력을 통해 국민의 해외 출원 비용과 심사 기간을 대폭 단축합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= 7. 최신 지식재산 동향 & 메가트렌드 ================= -->
+  <section id="trends" class="py-20 bg-slate-950 text-white relative overflow-hidden">
+    <div class="absolute top-0 right-1/4 w-96 h-96 rainbow-glow-2 rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="rainbow-text font-black text-sm tracking-widest uppercase">Global IP Megatrends</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-2 mb-4">
+          지식재산처가 집중하는 4대 미래 동향
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg">
+          기술 패권 경쟁과 생성형 AI의 대두로 지식재산 패러다임이 격변하고 있습니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- 동향 1 -->
+        <div class="p-8 rounded-3xl bg-slate-900/90 border border-pink-500/30 space-y-4 hover:border-pink-400 transition-colors">
+          <div class="flex items-center gap-3">
+            <div class="p-3.5 rounded-2xl bg-gradient-to-tr from-pink-500 to-rose-500 text-white shadow-lg">
+              <i data-lucide="bot" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-xs text-pink-400 font-black">FOCUS 01</span>
+              <h3 class="text-xl font-black text-white">생성형 AI와 발명자권·퍼블리시티권</h3>
+            </div>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            인공지능이 스스로 창작하거나 발명한 경우 발명자로 인정할 수 있을 것인가? 지식재산처는 글로벌 특허청 협의를 주도하며, AI 음성·초상 무단 도용을 막기 위한 '인격표지권' 보호법안을 신속히 마련 중입니다.
+          </p>
+          <div class="pt-2 text-xs text-pink-300 font-semibold flex items-center gap-1.5">
+            <i data-lucide="check" class="w-4 h-4 text-pink-400"></i> AI 창작물 귀속 가이드라인 제정 추진
+          </div>
+        </div>
+
+        <!-- 동향 2 -->
+        <div class="p-8 rounded-3xl bg-slate-900/90 border border-amber-500/30 space-y-4 hover:border-amber-400 transition-colors">
+          <div class="flex items-center gap-3">
+            <div class="p-3.5 rounded-2xl bg-gradient-to-tr from-amber-500 to-yellow-400 text-slate-950 shadow-lg">
+              <i data-lucide="battery-charging" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-xs text-amber-400 font-black">FOCUS 02</span>
+              <h3 class="text-xl font-black text-white">국가전략기술 특허 증가율 세계 2위 도약</h3>
+            </div>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            최근 10년간 전고체 배터리와 재사용 우주 발사체 분야에서 한국의 특허출원 연평균 증가율이 세계 2위를 달성했습니다. 특히 전고체 배터리는 삼성SDI, LG에너지솔루션 등 국내 기업들이 글로벌 톱10 내에 포진해 있습니다.
+          </p>
+          <div class="pt-2 text-xs text-amber-300 font-semibold flex items-center gap-1.5">
+            <i data-lucide="check" class="w-4 h-4 text-amber-400"></i> 미래 모빌리티·배터리 초격차 특허망 확보
+          </div>
+        </div>
+
+        <!-- 동향 3 -->
+        <div class="p-8 rounded-3xl bg-slate-900/90 border border-emerald-500/30 space-y-4 hover:border-emerald-400 transition-colors">
+          <div class="flex items-center gap-3">
+            <div class="p-3.5 rounded-2xl bg-gradient-to-tr from-emerald-500 to-teal-400 text-white shadow-lg">
+              <i data-lucide="user-check" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-xs text-emerald-400 font-black">FOCUS 03</span>
+              <h3 class="text-xl font-black text-white">전문인력 특허심사관 채용으로 기술유출 방지</h3>
+            </div>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            반도체·이차전지 민간 퇴직 엔지니어들을 전문 특허심사관으로 직접 채용! 해외 경쟁국으로의 기술 인력 유출을 막는 동시에, 30년 경력의 베테랑 현장 노하우로 심사 기간을 단축하고 있습니다.
+          </p>
+          <div class="pt-2 text-xs text-emerald-300 font-semibold flex items-center gap-1.5">
+            <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> 일자리 창출 + 국가 핵심기술 방어 1석 2조
+          </div>
+        </div>
+
+        <!-- 동향 4 -->
+        <div class="p-8 rounded-3xl bg-slate-900/90 border border-cyan-500/30 space-y-4 hover:border-cyan-400 transition-colors">
+          <div class="flex items-center gap-3">
+            <div class="p-3.5 rounded-2xl bg-gradient-to-tr from-cyan-500 to-indigo-500 text-white shadow-lg">
+              <i data-lucide="shield" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-xs text-cyan-400 font-black">FOCUS 04</span>
+              <h3 class="text-xl font-black text-white">K-브랜드 해외 위조품 AI 모니터링 시스템</h3>
+            </div>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            전 세계 100개국 이상의 온라인 쇼핑몰을 AI 이미지 인식 기술로 24시간 감시하여 한국 중소기업 상품을 모방한 짝퉁 상품 판매 링크를 실시간 차단하고 있습니다.
+          </p>
+          <div class="pt-2 text-xs text-cyan-300 font-semibold flex items-center gap-1.5">
+            <i data-lucide="check" class="w-4 h-4 text-cyan-400"></i> 연간 수만 건의 불법 게시물 삭제 조치
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= 8. 최신 뉴스 기사 및 보도자료 (URL 링크 포함) ================= -->
+  <section id="news" class="py-20 bg-white border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-rose-600 font-black text-sm tracking-widest uppercase">Latest News & Releases</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">
+            지식재산처 최신 정책 & 뉴스
+          </h2>
+          <p class="text-slate-600 text-base mt-2">
+            최근 발표된 주요 보도자료와 언론 기사를 실시간으로 확인하실 수 있습니다.
+          </p>
+        </div>
+        <div class="mt-4 md:mt-0 flex gap-2">
+          <a href="https://www.moip.go.kr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-bold transition-colors">
+            지식재산처 공식 누리집 <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+          <a href="https://www.korea.kr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl rainbow-btn text-white text-sm font-bold shadow-md transition-colors">
+            대한민국 정책브리핑 <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 뉴스 카드 그리드 (화려한 뱃지) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <article class="bg-white rounded-3xl border-2 border-rose-100 overflow-hidden shadow-sm hover:border-rose-400 card-rainbow-hover flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-slate-500 mb-3">
+              <span class="px-3 py-1 rounded-full bg-rose-100 text-rose-800 font-black">정부조직 개편</span>
+              <span>2025. 10</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-900 mb-2 leading-snug">
+              <a href="https://www.law.go.kr" target="_blank" rel="noopener noreferrer" class="hover:text-rose-600">
+                특허청, 국무총리 소속 '지식재산처'로 공식 승격 및 출범
+              </a>
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              정부조직법 개정안 시행에 따라 특허청이 차관급 독립 부처인 '지식재산처'로 새출발. 분쟁대응국 신설 및 범부처 IP 거버넌스 사령탑 가동.
+            </p>
+          </div>
+          <div class="px-6 py-4 bg-rose-50/50 border-t border-rose-100 flex items-center justify-between">
+            <span class="text-xs text-slate-500 font-bold">국가법령정보센터</span>
+            <a href="https://www.law.go.kr" target="_blank" rel="noopener noreferrer" class="text-xs font-black text-rose-600 hover:underline flex items-center gap-1">
+              관련 법령 보기 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-3xl border-2 border-amber-100 overflow-hidden shadow-sm hover:border-amber-400 card-rainbow-hover flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-slate-500 mb-3">
+              <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 font-black">특허 통계</span>
+              <span>최신 발표</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-900 mb-2 leading-snug">
+              <a href="https://www.korea.kr" target="_blank" rel="noopener noreferrer" class="hover:text-amber-600">
+                전고체 배터리·재사용 우주발사체 특허출원 증가율 '세계 2위'
+              </a>
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              지식재산처 발표에 따르면 지난 10년간 국가전략기술 분야의 특허 증가율이 세계 2위를 기록하며 글로벌 기술 초격차 확보를 입증했습니다.
+            </p>
+          </div>
+          <div class="px-6 py-4 bg-amber-50/50 border-t border-amber-100 flex items-center justify-between">
+            <span class="text-xs text-slate-500 font-bold">대한민국 정책브리핑</span>
+            <a href="https://www.korea.kr" target="_blank" rel="noopener noreferrer" class="text-xs font-black text-amber-600 hover:underline flex items-center gap-1">
+              보도자료 원문 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-3xl border-2 border-cyan-100 overflow-hidden shadow-sm hover:border-cyan-400 card-rainbow-hover flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-slate-500 mb-3">
+              <span class="px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 font-black">기술보호</span>
+              <span>수사 강화</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-900 mb-2 leading-snug">
+              <a href="https://www.moip.go.kr" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-600">
+                첨단 반도체 핵심공정 기술유출 특별사법경찰 엄정 단속
+              </a>
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              기술을 잘 아는 전문 특사경이 해외 이직을 통한 핵심 기술 반출 사범을 사전 포착해 엄정 사법처리하며 국가 핵심기술 보호막을 강화했습니다.
+            </p>
+          </div>
+          <div class="px-6 py-4 bg-cyan-50/50 border-t border-cyan-100 flex items-center justify-between">
+            <span class="text-xs text-slate-500 font-bold">지식재산처 소식알림</span>
+            <a href="https://www.moip.go.kr" target="_blank" rel="noopener noreferrer" class="text-xs font-black text-cyan-600 hover:underline flex items-center gap-1">
+              상세 기사 보기 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-3xl border-2 border-purple-100 overflow-hidden shadow-sm hover:border-purple-400 card-rainbow-hover flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-slate-500 mb-3">
+              <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-800 font-black">AI & 법제</span>
+              <span>정책 추진</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-900 mb-2 leading-snug">
+              <a href="https://www.kiip.re.kr" target="_blank" rel="noopener noreferrer" class="hover:text-purple-600">
+                AI 음성·초상권 무단 도용 제재… '인격표지권' 도입 속도
+              </a>
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              생성형 AI 발전으로 유명인 및 일반인의 목소리·얼굴 무단 복제 피해가 늘어남에 따라 지식재산처가 선제적 보호 법제화를 추진합니다.
+            </p>
+          </div>
+          <div class="px-6 py-4 bg-purple-50/50 border-t border-purple-100 flex items-center justify-between">
+            <span class="text-xs text-slate-500 font-bold">한국지식재산연구원</span>
+            <a href="https://www.kiip.re.kr" target="_blank" rel="noopener noreferrer" class="text-xs font-black text-purple-600 hover:underline flex items-center gap-1">
+              연구보고서 확인 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-3xl border-2 border-emerald-100 overflow-hidden shadow-sm hover:border-emerald-400 card-rainbow-hover flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-slate-500 mb-3">
+              <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-black">KIPRIS 개편</span>
+              <span>무료 검색</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-900 mb-2 leading-snug">
+              <a href="https://www.kipris.or.kr" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">
+                특허정보넷 KIPRIS 개편… 국내·해외 특허 원스톱 무료 통합검색
+              </a>
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              국민 누구나 스마트폰과 PC에서 전 세계 주요 특허, 상표, 디자인 문헌을 쉽게 찾을 수 있도록 인공지능 기반 검색 UI를 대폭 업그레이드했습니다.
+            </p>
+          </div>
+          <div class="px-6 py-4 bg-emerald-50/50 border-t border-emerald-100 flex items-center justify-between">
+            <span class="text-xs text-slate-500 font-bold">특허정보검색서비스</span>
+            <a href="https://www.kipris.or.kr" target="_blank" rel="noopener noreferrer" class="text-xs font-black text-emerald-600 hover:underline flex items-center gap-1">
+              KIPRIS 바로가기 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-3xl border-2 border-pink-100 overflow-hidden shadow-sm hover:border-pink-400 card-rainbow-hover flex flex-col justify-between">
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-slate-500 mb-3">
+              <span class="px-3 py-1 rounded-full bg-pink-100 text-pink-800 font-black">소상공인 지원</span>
+              <span>상표 출원</span>
+            </div>
+            <h3 class="text-lg font-black text-slate-900 mb-2 leading-snug">
+              <a href="https://www.patent.go.kr" target="_blank" rel="noopener noreferrer" class="hover:text-pink-600">
+                동네 가게 상표권도 지킨다… '소상공인 IP 역량강화' 집중 지원
+              </a>
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              맛집 상호 선점 피해와 분쟁을 사전에 예방하기 위해 소상공인과 전통시장 상인을 대상으로 상표출원 비용 및 전문가 무료 컨설팅을 제공합니다.
+            </p>
+          </div>
+          <div class="px-6 py-4 bg-pink-50/50 border-t border-pink-100 flex items-center justify-between">
+            <span class="text-xs text-slate-500 font-bold">특허로 (Patent.go.kr)</span>
+            <a href="https://www.patent.go.kr" target="_blank" rel="noopener noreferrer" class="text-xs font-black text-pink-600 hover:underline flex items-center gap-1">
+              온라인 신청 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= 9. 인터랙티브: 국민 맞춤형 "내 아이디어 권리 진단기" ================= -->
+  <section id="simulator" class="py-20 bg-gradient-to-b from-slate-50 to-pink-50/30 border-b border-pink-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="text-pink-600 font-black text-sm tracking-widest uppercase">Interactive Simulator</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2 mb-3">
+          내 아이디어는 어떤 권리로 보호받을까요?
+        </h2>
+        <p class="text-slate-600 text-base">
+          질문에 답변해 보세요! 지식재산처가 가장 알맞은 지식재산권과 출원 가이드를 추천해 드립니다.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border-2 border-pink-200 shadow-2xl">
+        <!-- 스텝 진행 바 -->
+        <div class="flex items-center justify-between mb-8 pb-4 border-b border-slate-100">
+          <div class="text-sm font-black text-pink-600" id="stepIndicator">질문 1 / 2</div>
+          <div class="flex gap-2">
+            <div id="stepDot1" class="w-3.5 h-3.5 rounded-full bg-pink-500"></div>
+            <div id="stepDot2" class="w-3.5 h-3.5 rounded-full bg-slate-200"></div>
+          </div>
+        </div>
+
+        <!-- 질문 1 화면 -->
+        <div id="quizStep1" class="space-y-6">
+          <h3 class="text-xl sm:text-2xl font-black text-slate-900 text-center">
+            당신이 보호받고 싶은 창작물의 핵심 성격은 무엇인가요?
+          </h3>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <button onclick="handleSelectQ1('tech')" class="p-5 rounded-2xl border-2 border-slate-200 hover:border-blue-500 hover:bg-blue-50/50 text-left transition-all group">
+              <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                <i data-lucide="cpu" class="w-5 h-5"></i>
+              </div>
+              <div class="font-black text-slate-900 text-lg mb-1">새로운 기능이나 기술적 원리</div>
+              <p class="text-xs text-slate-500">기존에 없던 혁신 기술, 작동 원리, 편리한 구조적 개선</p>
+            </button>
+
+            <button onclick="handleSelectQ1('look')" class="p-5 rounded-2xl border-2 border-slate-200 hover:border-pink-500 hover:bg-pink-50/50 text-left transition-all group">
+              <div class="w-10 h-10 rounded-xl bg-pink-100 text-pink-600 flex items-center justify-center font-bold mb-3 group-hover:bg-pink-600 group-hover:text-white transition-colors">
+                <i data-lucide="palette" class="w-5 h-5"></i>
+              </div>
+              <div class="font-black text-slate-900 text-lg mb-1">물건의 외형이나 모양 (디자인)</div>
+              <p class="text-xs text-slate-500">제품의 독창적인 외관, 패턴, 곡선, 조명 형태, UI 아이콘</p>
+            </button>
+
+            <button onclick="handleSelectQ1('brand')" class="p-5 rounded-2xl border-2 border-slate-200 hover:border-amber-500 hover:bg-amber-50/50 text-left transition-all group">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold mb-3 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                <i data-lucide="badge-check" class="w-5 h-5"></i>
+              </div>
+              <div class="font-black text-slate-900 text-lg mb-1">가게 이름, 상호, 로고 (브랜드)</div>
+              <p class="text-xs text-slate-500">고객이 내 가게나 상품을 알아볼 수 있는 이름, 심볼마크, 슬로건</p>
+            </button>
+
+            <button onclick="handleSelectQ1('content')" class="p-5 rounded-2xl border-2 border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/50 text-left transition-all group">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold mb-3 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                <i data-lucide="music" class="w-5 h-5"></i>
+              </div>
+              <div class="font-black text-slate-900 text-lg mb-1">글, 음악, 그림, 캐릭터 (창작물)</div>
+              <p class="text-xs text-slate-500">소설, 웹툰 스토리, 작곡 음원, 예술 회화 작품 등</p>
+            </button>
+          </div>
+        </div>
+
+        <!-- 질문 2 화면 -->
+        <div id="quizStep2Tech" class="hidden space-y-6">
+          <h3 class="text-xl sm:text-2xl font-black text-slate-900 text-center">
+            기술의 혁신 난이도는 어느 쪽에 더 가깝나요?
+          </h3>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <button onclick="showResult('patent')" class="p-5 rounded-2xl border-2 border-slate-200 hover:border-blue-600 hover:bg-blue-50/50 text-left transition-all group">
+              <div class="font-black text-slate-900 text-lg mb-1">고도의 신기술 / 알고리즘 / 제조공법</div>
+              <p class="text-xs text-slate-500 mb-2">기술적으로 전 세계에 없던 완전히 새로운 원리이거나 대규모 R&D 결과물입니다.</p>
+              <span class="text-xs font-bold text-blue-700 flex items-center gap-1">선택하기 →</span>
+            </button>
+
+            <button onclick="showResult('utility')" class="p-5 rounded-2xl border-2 border-slate-200 hover:border-teal-600 hover:bg-teal-50/50 text-left transition-all group">
+              <div class="font-black text-slate-900 text-lg mb-1">생활 속 실용적인 구조 개선 / 아이디어 제품</div>
+              <p class="text-xs text-slate-500 mb-2">기존 물건의 모양이나 연결 부위를 바꿔 훨씬 쓰기 편리하게 만든 작은 발명입니다.</p>
+              <span class="text-xs font-bold text-teal-700 flex items-center gap-1">선택하기 →</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 결과 화면 -->
+        <div id="quizResult" class="hidden text-center space-y-6 py-4">
+          <div id="resultIcon" class="w-20 h-20 rounded-3xl mx-auto flex items-center justify-center text-white text-3xl shadow-xl"></div>
+          <div>
+            <span class="text-xs font-black px-3.5 py-1 rounded-full bg-slate-100 text-slate-700" id="resultCategory">진단 결과</span>
+            <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mt-2" id="resultTitle">특허권</h3>
+            <p class="text-slate-600 text-sm sm:text-base max-w-lg mx-auto mt-3" id="resultDesc">
+              설명 내용
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-pink-50 to-indigo-50 rounded-2xl p-5 border border-pink-200 max-w-lg mx-auto text-left text-sm space-y-2">
+            <div class="font-black text-purple-900 flex items-center gap-1.5">
+              <i data-lucide="check-circle" class="w-4 h-4 text-purple-700"></i> 추천 액션 가이드
+            </div>
+            <p class="text-slate-700 text-xs sm:text-sm font-medium" id="resultAction">
+              조치 가이드
+            </p>
+          </div>
+
+          <div class="flex justify-center gap-3 pt-2">
+            <button onclick="resetQuiz()" class="px-5 py-2.5 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold text-sm transition-colors">
+              다시 진단하기
+            </button>
+            <a href="https://www.patent.go.kr" target="_blank" class="px-6 py-2.5 rounded-xl rainbow-btn text-white font-black text-sm shadow-md transition-all flex items-center gap-1.5">
+              특허로 온라인 출원 바로가기 <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= 10. 유관기관 링크 & 푸터 ================= -->
+  <footer class="bg-slate-950 text-slate-400 py-16 border-t-2 border-pink-500/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- 패밀리 사이트 배너 그리드 -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pb-12 mb-12 border-b border-slate-800">
+        <a href="https://www.kipris.or.kr" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-slate-900 hover:border-pink-500 border border-slate-800 text-center transition-all">
+          <div class="text-white font-black text-sm mb-1">KIPRIS 특허정보넷</div>
+          <div class="text-xs text-slate-500">국내외 특허 무료 검색</div>
+        </a>
+        <a href="https://www.patent.go.kr" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-slate-900 hover:border-amber-500 border border-slate-800 text-center transition-all">
+          <div class="text-white font-black text-sm mb-1">특허로 (Patent.go.kr)</div>
+          <div class="text-xs text-slate-500">온라인 출원 및 감면</div>
+        </a>
+        <a href="https://www.kiip.re.kr" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-slate-900 hover:border-emerald-500 border border-slate-800 text-center transition-all">
+          <div class="text-white font-black text-sm mb-1">한국지식재산연구원</div>
+          <div class="text-xs text-slate-500">국가 IP 정책 싱크탱크</div>
+        </a>
+        <a href="https://www.ripc.org" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-slate-900 hover:border-cyan-500 border border-slate-800 text-center transition-all">
+          <div class="text-white font-black text-sm mb-1">지역지식재산센터 (RIPC)</div>
+          <div class="text-xs text-slate-500">전국 27개 지역센터 지원</div>
+        </a>
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <div class="flex items-center gap-3">
+            <span class="text-white font-black text-xl tracking-tight">대한민국 지식재산처</span>
+            <span class="text-xs font-bold text-pink-400">Ministry of Intellectual Property (구 특허청)</span>
+          </div>
+          <p class="text-xs text-slate-500 mt-2">
+            본 웹 애플리케이션은 서버 구동 없이 로컬 파일(더블클릭)로 즉시 실행되는 지식재산처 대국민 안내 포털입니다.<br>
+            대전광역시 서구 청사로 189 정부대전청사 지식재산처 | 정부민원안내 콜센터: 국번없이 110 (특허고객상담센터: 1544-8080)
+          </p>
+        </div>
+
+        <div class="text-xs text-slate-500 text-center md:text-right">
+          <p>© 2026 Ministry of Intellectual Property. All rights reserved.</p>
+          <p class="mt-1">Creative Commons BY-NC 4.0 대한민국 정책브리핑 및 공공누리 연계</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ================= 11. JavaScript 로직 ================= -->
+  <script>
+    lucide.createIcons();
+
+    // 모바일 메뉴 토글
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    /* 무지개 테마 지원사업 데이터베이스 */
+    const supportPrograms = [
+      {
+        id: 'p1',
+        title: '소상공인 IP(지식재산) 역량 강화 지원',
+        agency: '지식재산처 & 지역지식재산센터(RIPC)',
+        targetPersonas: ['merchant', 'citizen'],
+        targetNeeds: ['brand_dispute', 'fee_cut', 'idea_patent'],
+        tag: '소상공인 전담',
+        borderGradient: 'from-amber-400 to-orange-500',
+        badgeColor: 'bg-amber-100 text-amber-800 border-amber-300',
+        desc: '동네 상점의 고유 상호(가게명), 레시피, 디자인을 지키기 위한 상표 출원 비용(자부담금 대폭 완화) 및 전문가 현장 컨설팅을 지원합니다.',
+        benefits: ['상표 및 디자인 출원 비용 지원', '상호 선점 및 카피 방지 진단', '전문 변리사 1:1 매칭'],
+        link: 'https://www.ripc.org',
+        linkText: 'RIPC 지원 신청 바로가기'
+      },
+      {
+        id: 'p2',
+        title: '공익변리사 무료 변리 & 권리화 서류 작성',
+        agency: '공익변리사 특허상담센터 (한국지식재산보호원)',
+        targetPersonas: ['citizen', 'merchant', 'student', 'startup'],
+        targetNeeds: ['free_counsel', 'idea_patent', 'brand_dispute'],
+        tag: '전액 무료 상담',
+        borderGradient: 'from-emerald-400 to-teal-500',
+        badgeColor: 'bg-emerald-100 text-emerald-800 border-emerald-300',
+        desc: '비용 부담으로 변리사를 선임하기 어려운 소상공인, 학생, 청년, 영세민을 위해 특허·실용신안 명세서 작성과 심판·소송 대리를 무료로 지원합니다.',
+        benefits: ['방문·전화·온라인 무료 법률 상담', '특허·디자인 출원 서류 대리 작성', '심판 및 분쟁 무료 대리'],
+        link: 'https://www.pcc.or.kr',
+        linkText: '공익변리사 상담 신청 (pcc.or.kr)'
+      },
+      {
+        id: 'p3',
+        title: '특허·상표 출원료 & 등록료 대폭 감면 (최대 100%)',
+        agency: '지식재산처 (특허로)',
+        targetPersonas: ['citizen', 'student', 'merchant', 'startup', 'sme'],
+        targetNeeds: ['fee_cut'],
+        tag: '수수료 감면',
+        borderGradient: 'from-pink-400 to-rose-500',
+        badgeColor: 'bg-pink-100 text-pink-800 border-pink-300',
+        desc: '개인 발명가, 학생, 청년(만 19~39세), 중소·벤처기업 및 소상공인에게 출원료, 심사청구료, 1~3년분 등록료를 70%에서 최대 100%까지 감면합니다.',
+        benefits: ['초중고·대학생 출원 수수료 100% 면제', '소상공인 및 소기업 85% 감면', '중소기업 70% 감면 적용'],
+        link: 'https://www.patent.go.kr',
+        linkText: '특허로 감면 자격 조회 (patent.go.kr)'
+      },
+      {
+        id: 'p4',
+        title: 'IP 디딤돌 프로그램 (우수 아이디어 권리화)',
+        agency: '지식재산처 & 지역지식재산센터',
+        targetPersonas: ['startup', 'citizen', 'student'],
+        targetNeeds: ['idea_patent', 'free_counsel'],
+        tag: '예비창업자 추천',
+        borderGradient: 'from-cyan-400 to-blue-500',
+        badgeColor: 'bg-cyan-100 text-cyan-800 border-cyan-300',
+        desc: '아이디어는 있지만 도면이나 시제품을 만들 줄 모르는 예비창업자를 위해 전문 컨설턴트가 아이디어를 고도화하고 국내 특허출원 및 3D 모형 설계를 지원합니다.',
+        benefits: ['국내 특허출원 비용 전액 지원', '3D 프린팅 시제품 모형 제작', '창업 컨설팅 및 연계 보육'],
+        link: 'https://www.ripc.org',
+        linkText: '디딤돌 프로그램 신청하기'
+      },
+      {
+        id: 'p5',
+        title: '중소기업 IP 바로지원 & IP 나래 프로그램',
+        agency: '지식재산처',
+        targetPersonas: ['sme', 'startup'],
+        targetNeeds: ['idea_patent', 'rnd_fast', 'brand_dispute'],
+        tag: '중소·스타트업',
+        borderGradient: 'from-indigo-400 to-purple-500',
+        badgeColor: 'bg-indigo-100 text-indigo-800 border-indigo-300',
+        desc: '창업 7년 이내 스타트업이나 중소기업의 IP 현안(경쟁사 특허 회피, 해외 출원, 브랜드/디자인 개발, 맞춤형 R&D 전략)을 전문가 밀착 진단으로 해결합니다.',
+        benefits: ['해외 권리화(PCT 등) 출원 바우처', '특허·디자인맵(경쟁사 분석)', '브랜드 네이밍 및 패키지 개발'],
+        link: 'https://pms.ripc.org',
+        linkText: 'RIPC 사업관리시스템 바로가기'
+      },
+      {
+        id: 'p6',
+        title: '12조원 규모 지식재산(IP) 금융 & 담보대출 연계',
+        agency: '지식재산처 & 주요 시중은행',
+        targetPersonas: ['sme', 'startup'],
+        targetNeeds: ['finance_eval'],
+        tag: '자금 조달 & 금융',
+        borderGradient: 'from-lime-400 to-emerald-500',
+        badgeColor: 'bg-lime-100 text-lime-800 border-lime-300',
+        desc: '부동산이나 신용 담보가 부족한 기술형 기업을 위해 지식재산처가 공인한 특허가치평가를 거쳐 시중은행의 IP 담보대출과 IP 보증 및 투자펀드를 연계 지원합니다.',
+        benefits: ['특허 가치평가 비용 80~100% 보조', '시중은행 저금리 IP 담보대출', '정부 모태펀드 IP 직접투자 연계'],
+        link: 'https://www.kibo.or.kr',
+        linkText: '기술보증기금 IP보증 안내'
+      },
+      {
+        id: 'p7',
+        title: '국가전략기술 초고속 우선심사 제도',
+        agency: '지식재산처 특허심사국',
+        targetPersonas: ['sme', 'researcher', 'startup'],
+        targetNeeds: ['rnd_fast'],
+        tag: '심사기간 대폭 단축',
+        borderGradient: 'from-rose-500 to-pink-600',
+        badgeColor: 'bg-rose-100 text-rose-800 border-rose-300',
+        desc: '반도체, 이차전지, 바이오, AI 등 국가전략기술 관련 출원 또는 벤처·스타트업의 출원에 대해 통상 16~18개월 걸리는 심사를 1~3개월 만에 신속하게 처리합니다.',
+        benefits: ['1~3개월 내 빠른 특허 등록 결정', '투자 유치 및 사업화 속도 극대화', '퇴직 전문연구원 1:1 심사 협의'],
+        link: 'https://www.patent.go.kr',
+        linkText: '우선심사 신청 안내'
+      },
+      {
+        id: 'p8',
+        title: '청소년·대학생 발명대회 & 차세대 인재 육성',
+        agency: '지식재산처 & 한국발명진흥회',
+        targetPersonas: ['student', 'citizen'],
+        targetNeeds: ['idea_patent', 'fee_cut'],
+        tag: '청소년·대학생',
+        borderGradient: 'from-violet-400 to-fuchsia-500',
+        badgeColor: 'bg-violet-100 text-violet-800 border-violet-300',
+        desc: '대한민국 학생발명전시회, 캠퍼스 특허 유니버시아드, IP 마이스터 프로그램 등 학생들의 기발한 아이디어를 지식재산으로 보호하고 시상과 장학금을 지원합니다.',
+        benefits: ['대통령상 등 정부 표창 및 장학금', '특허 출원 전액 무료 지원', '산업계 실전 과제 해결 멘토링'],
+        link: 'https://www.kipa.org',
+        linkText: '한국발명진흥회 공모전 보기'
+      },
+      {
+        id: 'p9',
+        title: '해외 K-브랜드 위조상품 차단 & 침해대응 지원',
+        agency: '지식재산처 지식재산분쟁대응국',
+        targetPersonas: ['merchant', 'sme', 'startup'],
+        targetNeeds: ['brand_dispute'],
+        tag: '해외 수출 기업',
+        borderGradient: 'from-red-400 to-orange-500',
+        badgeColor: 'bg-red-100 text-red-800 border-red-300',
+        desc: '해외 온라인 쇼핑몰(타오바오, 아마존 등)에서 유통되는 모조품 판매 링크를 인공지능으로 찾아내어 차단하고, 해외 상표 무단 선점 시 취소심판 비용을 지원합니다.',
+        benefits: ['AI 기반 위조상품 유통 24시간 모니터링', '해외 상표 무단선점 공동대응 지원', '지식재산 침해 법률 자문 바우처'],
+        link: 'https://www.koipa.re.kr',
+        linkText: '지식재산보호원 분쟁대응 안내'
+      }
+    ];
+
+    let selectedPersona = null;
+
+    function selectPersona(type, btnElement) {
+      selectedPersona = type;
+      document.querySelectorAll('.persona-btn').forEach(btn => {
+        btn.classList.remove('border-pink-500', 'bg-pink-50', 'ring-4', 'ring-pink-300/40');
+        btn.classList.add('border-slate-200', 'bg-white');
+      });
+
+      btnElement.classList.remove('border-slate-200', 'bg-white');
+      btnElement.classList.add('border-pink-500', 'bg-pink-50', 'ring-4', 'ring-pink-300/40');
+
+      runSupportFilter();
+    }
+
+    function toggleAllNeeds(state) {
+      const checkboxes = document.querySelectorAll('input[name="need"]');
+      checkboxes.forEach(cb => { cb.checked = state; });
+      runSupportFilter();
+    }
+
+    function resetSupportFinder() {
+      selectedPersona = null;
+      document.querySelectorAll('.persona-btn').forEach(btn => {
+        btn.classList.remove('border-pink-500', 'bg-pink-50', 'ring-4', 'ring-pink-300/40');
+        btn.classList.add('border-slate-200', 'bg-white');
+      });
+      document.querySelectorAll('input[name="need"]').forEach(cb => { cb.checked = false; });
+      runSupportFilter();
+    }
+
+    function scrollToResults() {
+      document.getElementById('supportResultContainer').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function runSupportFilter() {
+      const selectedNeeds = Array.from(document.querySelectorAll('input[name="need"]:checked')).map(cb => cb.value);
+
+      const filtered = supportPrograms.filter(prog => {
+        const matchPersona = (!selectedPersona) || prog.targetPersonas.includes(selectedPersona);
+        const matchNeed = (selectedNeeds.length === 0) || selectedNeeds.some(n => prog.targetNeeds.includes(n));
+        return matchPersona && matchNeed;
+      });
+
+      renderSupportCards(filtered, selectedPersona, selectedNeeds);
+    }
+
+    function renderSupportCards(programs, persona, needs) {
+      const grid = document.getElementById('supportCardsGrid');
+      const countBadge = document.getElementById('resultCountBadge');
+      const summaryText = document.getElementById('resultTargetSummary');
+
+      countBadge.innerText = `${programs.length}개 혜택 발견`;
+
+      let personaNames = {
+        citizen: '일반 국민(개인/직장인)',
+        merchant: '소상공인·자영업자',
+        startup: '예비창업자·청년',
+        sme: '중소기업·스타트업',
+        student: '학생·청소년',
+        researcher: '연구원·대학/연구기관'
+      };
+
+      if (persona) {
+        summaryText.innerHTML = `<strong class="text-pink-600">${personaNames[persona]}</strong> 대상 맞춤 추천 결과입니다. (${needs.length > 0 ? '선택하신 고민 분야 반영' : '전체 분야'})`;
+      } else {
+        summaryText.innerText = '전체 국민 및 기업을 위한 지식재산처의 대표 맞춤 지원 제도를 안내합니다.';
+      }
+
+      if (programs.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full py-16 text-center bg-white rounded-3xl border-2 border-pink-200 p-8 space-y-3 shadow-sm">
+            <i data-lucide="sparkles" class="w-12 h-12 text-pink-400 mx-auto"></i>
+            <h4 class="text-lg font-black text-slate-800">해당 조건에 딱 맞는 항목을 찾지 못했습니다.</h4>
+            <p class="text-sm text-slate-500">필터 조건을 완화해 보시거나 특허고객상담센터(1544-8080)로 문의하시면 맞춤 컨설팅을 받으실 수 있습니다.</p>
+            <button onclick="resetSupportFinder()" class="mt-2 px-5 py-2.5 rainbow-btn text-white font-black text-xs rounded-xl">초기화하고 전체 보기</button>
+          </div>
+        `;
+        lucide.createIcons();
+        return;
+      }
+
+      grid.innerHTML = programs.map(p => `
+        <div class="bg-white rounded-3xl border-2 border-slate-100 hover:border-transparent p-6 shadow-md card-rainbow-hover flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r ${p.borderGradient}"></div>
+
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3 pt-1">
+              <span class="px-3 py-1 rounded-full text-xs font-black border ${p.badgeColor}">${p.tag}</span>
+              <span class="text-[11px] font-bold text-slate-400 truncate max-w-[140px]">${p.agency}</span>
+            </div>
+
+            <h4 class="text-lg font-black text-slate-900 mb-2 leading-snug group-hover:text-pink-600 transition-colors">
+              ${p.title}
+            </h4>
+
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4 font-normal">
+              ${p.desc}
+            </p>
+
+            <div class="bg-slate-50 p-3.5 rounded-2xl border border-slate-100 space-y-1.5 mb-5">
+              <span class="text-[11px] font-black text-purple-700 block">✨ 핵심 지원 혜택</span>
+              ${p.benefits.map(b => `
+                <div class="text-xs text-slate-700 font-medium flex items-start gap-1.5">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-pink-500 shrink-0 mt-0.5"></i>
+                  <span>${b}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 font-semibold">지식재산처 연계</span>
+            <a href="${p.link}" target="_blank" rel="noopener noreferrer" class="text-xs font-black text-purple-700 hover:text-pink-600 flex items-center gap-1">
+              <span>${p.linkText}</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+      `).join('');
+
+      lucide.createIcons();
+    }
+
+    runSupportFilter();
+
+    /* 아이디어 권리 진단기 */
+    let currentCategory = '';
+
+    function handleSelectQ1(type) {
+      currentCategory = type;
+      if (type === 'tech') {
+        document.getElementById('quizStep1').classList.add('hidden');
+        document.getElementById('quizStep2Tech').classList.remove('hidden');
+        document.getElementById('stepIndicator').innerText = '질문 2 / 2';
+        document.getElementById('stepDot2').classList.remove('bg-slate-200');
+        document.getElementById('stepDot2').classList.add('bg-pink-500');
+      } else if (type === 'look') {
+        showResult('design');
+      } else if (type === 'brand') {
+        showResult('trademark');
+      } else if (type === 'content') {
+        showResult('copyright');
+      }
+    }
+
+    function showResult(resultKey) {
+      document.getElementById('quizStep1').classList.add('hidden');
+      document.getElementById('quizStep2Tech').classList.add('hidden');
+      document.getElementById('quizResult').classList.remove('hidden');
+      document.getElementById('stepIndicator').innerText = '진단 완료';
+
+      const iconBox = document.getElementById('resultIcon');
+      const category = document.getElementById('resultCategory');
+      const title = document.getElementById('resultTitle');
+      const desc = document.getElementById('resultDesc');
+      const action = document.getElementById('resultAction');
+
+      if (resultKey === 'patent') {
+        iconBox.className = 'w-20 h-20 rounded-3xl mx-auto flex items-center justify-center text-white text-3xl shadow-xl bg-gradient-to-tr from-blue-600 to-indigo-600';
+        iconBox.innerHTML = '<i data-lucide="cpu" class="w-10 h-10"></i>';
+        category.innerText = '산업재산권 (기술 혁신)';
+        title.innerText = '💡 특허권 (Patent)';
+        desc.innerText = '원천기술, 신규 알고리즘, 새로운 화학 합성물 등 높은 창작성이 인정되는 발명에 적합합니다. 등록 시 20년간 독점적 권리를 가집니다.';
+        action.innerHTML = '1. KIPRIS(특허정보넷)에서 유사 기술 선행 조사를 실시하세요.<br>2. 공개(논문, 전시, 블로그)하기 전 특허로(patent.go.kr)에 출원서를 먼저 접수하세요.';
+      } else if (resultKey === 'utility') {
+        iconBox.className = 'w-20 h-20 rounded-3xl mx-auto flex items-center justify-center text-white text-3xl shadow-xl bg-gradient-to-tr from-teal-500 to-emerald-500';
+        iconBox.innerHTML = '<i data-lucide="wrench" class="w-10 h-10"></i>';
+        category.innerText = '산업재산권 (실용 개량)';
+        title.innerText = '⚙️ 실용신안권 (Utility Model)';
+        desc.innerText = '기존 물품의 형상이나 구조를 편리하게 바꾼 "작은 발명"에 가장 유리합니다. 특허보다 등록 문턱이 낮고 비용도 절감할 수 있으며 10년간 보호받습니다.';
+        action.innerHTML = '1. 물품의 입체적 도면과 구조 개선점을 명세서에 구체화하세요.<br>2. 특허와 실용신안 중 유리한 방식을 공익변리사 센터에서 무료 상담받아 보세요.';
+      } else if (resultKey === 'design') {
+        iconBox.className = 'w-20 h-20 rounded-3xl mx-auto flex items-center justify-center text-white text-3xl shadow-xl bg-gradient-to-tr from-pink-500 to-rose-500';
+        iconBox.innerHTML = '<i data-lucide="palette" class="w-10 h-10"></i>';
+        category.innerText = '산업재산권 (시각적 미감)';
+        title.innerText = '🎨 디자인권 (Design Right)';
+        desc.innerText = '제품의 형태, 색채, 모양, 글자체, 화상디자인(GUI) 등 눈으로 보는 아름다운 외관을 독점 보호합니다. 존속기간은 20년입니다.';
+        action.innerHTML = '1. 제품의 6면도(정면, 배면, 평면, 저면, 좌우측면) 도면이나 사진을 준비하세요.<br>2. 유행이 빠른 품목은 지식재산처의 "일부심사등록제도"를 이용하면 빠르게 등록됩니다.';
+      } else if (resultKey === 'trademark') {
+        iconBox.className = 'w-20 h-20 rounded-3xl mx-auto flex items-center justify-center text-white text-3xl shadow-xl bg-gradient-to-tr from-amber-500 to-orange-500';
+        iconBox.innerHTML = '<i data-lucide="badge-check" class="w-10 h-10"></i>';
+        category.innerText = '산업재산권 (브랜드 보호)';
+        title.innerText = '🏷️ 상표권 (Trademark)';
+        desc.innerText = '가게 상호, 프랜차이즈 브랜드명, 로고마크, 제품명 등 다른 사람과의 상품을 식별하는 표지를 지킵니다. 10년마다 갱신하여 평생 소유할 수 있습니다.';
+        action.innerHTML = '1. KIPRIS에서 동일하거나 발음이 비슷한 상표가 지정상품군에 등록되어 있는지 확인하세요.<br>2. 간판을 달기 전 미리 출원해야 상표 브로커의 선점 피해를 막을 수 있습니다.';
+      } else if (resultKey === 'copyright') {
+        iconBox.className = 'w-20 h-20 rounded-3xl mx-auto flex items-center justify-center text-white text-3xl shadow-xl bg-gradient-to-tr from-emerald-500 to-cyan-500';
+        iconBox.innerHTML = '<i data-lucide="music" class="w-10 h-10"></i>';
+        category.innerText = '문화·예술 저작재산권';
+        title.innerText = '📚 저작권 (Copyright)';
+        desc.innerText = '문학, 음악, 미술, 컴퓨터 프로그램 등 인간의 사상이나 감정을 표현한 창작물에 자동 부여됩니다. 창작과 동시에 효력이 생기며(무방식주의), 사후 70년까지 유지됩니다.';
+        action.innerHTML = '1. 저작권은 별도 심사 없이 창작 즉시 보호됩니다.<br>2. 권리 다툼에 대비하여 한국저작권위원회(cros.or.kr)에 등록해 두면 법적 추정력이 생깁니다.';
+      }
+
+      lucide.createIcons();
+    }
+
+    function resetQuiz() {
+      document.getElementById('quizStep1').classList.remove('hidden');
+      document.getElementById('quizStep2Tech').classList.add('hidden');
+      document.getElementById('quizResult').classList.add('hidden');
+      document.getElementById('stepIndicator').innerText = '질문 1 / 2';
+      document.getElementById('stepDot2').classList.remove('bg-pink-500');
+      document.getElementById('stepDot2').classList.add('bg-slate-200');
+    }
+  </script>
+</body>
+</html>
